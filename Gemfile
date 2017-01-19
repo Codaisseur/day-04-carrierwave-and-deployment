@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+
 gem 'rails', '~> 5.0.0'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
@@ -14,6 +16,12 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
 gem 'devise'
+
+gem 'rails_12factor', group: :production
+
+gem 'carrierwave'
+
+gem 'cloudinary'
 
 group :development, :test do
   gem 'byebug', platform: :mri
